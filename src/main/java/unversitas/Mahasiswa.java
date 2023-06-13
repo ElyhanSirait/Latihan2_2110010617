@@ -1,33 +1,45 @@
 
-package unversitas;
+package Universitas;
 
-public class Mahasiswa {
-   Private int npm;
-   Private String nama;
-   Private String prodi;
+public class mahasiswa {
+    private String nama;
+    private String npm;
+    private String prodi;
+    
+public mahasiswa(String nama, String npm, String prodi) {
+    this.nama = nama;
+    this.npm = npm;
+    this.prodi = prodi;
+    }
 
-public int getnpm(){
-    return npm;
+    public String getNama() {
+        return nama;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public String getNpm() {
+        return npm;
+    }
+
+    public void setNpm(String npm) {
+        this.npm = npm;
+    }
+
+    public String getProdi() {
+        return prodi;
+    }
+
+    public void setProdi(String prodi) {
+        this.prodi = prodi;
+    }
+    
+    public String getDetail(){
+        return "Nama : "+nama +"\nNPM:" +npm +"\nProgram Studi :" +prodi;
+    }
+
 }
-public void setnpm(int n) {
-    this.npm = n;
-}
-public string getnama(){
-    return nama;
-}
-public void setnama(string nm) {
-    this.nama = nm;
-}
-public int getprodi(){
-    return prodi;
-}
-public void setprodi(String p) {
-    this.prodi = p;
-}
-  public void  Show(){
-      System.out.println("NPM : "+ npm);
-      System.out.println("Nama : "+ nama);
-      System.out.println("Program Studi : "+ prodi);
-  }
-}
+
 
